@@ -41,6 +41,38 @@ Resources:
             Method: PUT
     Metadata:
       SamResourceId: OrderStatusFunction
+  MenuImportFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: MenuImportFunction
+      Handler: menu
+      Runtime: go1.x
+      Architectures:
+      - x86_64
+      Events:
+        CatchAll:
+          Type: Api
+          Properties:
+            Path: /menuimport/{remoteId}
+            Method: GET
+    Metadata:
+      SamResourceId: MenuImportFunction
+  CallbackFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: CallbackFunction
+      Handler: callback
+      Runtime: go1.x
+      Architectures:
+      - x86_64
+      Events:
+        CatchAll:
+          Type: Api
+          Properties:
+            Path: /callback
+            Method: POST
+    Metadata:
+      SamResourceId: CallbackFunction
 Outputs:
   HelloWorldAPI:
     Description: API Gateway endpoint URL for Prod environment for First Function

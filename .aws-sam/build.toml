@@ -19,4 +19,22 @@ manifest_hash = ""
 packagetype = "Zip"
 functions = ["OrderStatusFunction"]
 
+[function_build_definitions.f6368591-8289-443f-a411-d91308d387ba]
+codeuri = "/Users/ekin.bulut/Developer/aws/pos-plugin/menu"
+runtime = "go1.x"
+architecture = "x86_64"
+handler = "menu"
+manifest_hash = ""
+packagetype = "Zip"
+functions = ["MenuImportFunction"]
+
+[function_build_definitions.3ce234b6-2d04-4086-9955-b4a60aa92214]
+codeuri = "/Users/ekin.bulut/Developer/aws/pos-plugin/callback"
+runtime = "go1.x"
+architecture = "x86_64"
+handler = "callback"
+manifest_hash = ""
+packagetype = "Zip"
+functions = ["CallbackFunction"]
+
 [layer_build_definitions]

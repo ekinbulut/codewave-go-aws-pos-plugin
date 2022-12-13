@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"order/models"
 
 	"github.com/aws/aws-lambda-go/events"
