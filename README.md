@@ -6,15 +6,15 @@ This is a sample template for pos-plugin - Below is a brief explanation of what 
 .
 ├── Makefile                    <-- Make to automate build
 ├── README.md                   <-- This instructions file
-├── menu                   <-- Source code for a lambda function
+├── menu                        <-- Source code for a lambda function
 │   ├── main.go                 <-- Lambda function code
-│── events                 <-- Source code for a lambda function
+│── events                      <-- Source code for a lambda function
 │   ├── main.go                 <-- Lambda function code 
-├── callback               <-- Source code for a lambda function
+├── callback                    <-- Source code for a lambda function
 │   ├── main.go                 <-- Lambda function code
-├── order                  <-- Source code for a lambda function
+├── order                       <-- Source code for a lambda function
 │   ├── main.go                 <-- Lambda function code
-├── status                 <-- Source code for a lambda function
+├── status                      <-- Source code for a lambda function
 │   ├── main.go                 <-- Lambda function code
 └── template.yaml
 ```
