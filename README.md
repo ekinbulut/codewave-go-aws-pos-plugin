@@ -6,9 +6,16 @@ This is a sample template for pos-plugin - Below is a brief explanation of what 
 .
 ├── Makefile                    <-- Make to automate build
 ├── README.md                   <-- This instructions file
-├── hello-world                 <-- Source code for a lambda function
+├── menu                   <-- Source code for a lambda function
 │   ├── main.go                 <-- Lambda function code
-│   └── main_test.go            <-- Unit tests
+│── events                 <-- Source code for a lambda function
+│   ├── main.go                 <-- Lambda function code 
+├── callback               <-- Source code for a lambda function
+│   ├── main.go                 <-- Lambda function code
+├── order                  <-- Source code for a lambda function
+│   ├── main.go                 <-- Lambda function code
+├── status                 <-- Source code for a lambda function
+│   ├── main.go                 <-- Lambda function code
 └── template.yaml
 ```
 
